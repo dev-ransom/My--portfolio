@@ -29,8 +29,6 @@ body {
   padding: 10px 10%;
 }
 
-
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -70,30 +68,28 @@ nav ul li a:hover::after {
 }
 
 nav h1 {
- font-size: 40px;
- font-weight: 600;
- position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
 }
 
-
-nav h1 span{
+nav h1 span {
   color: #128c7e;
   font-weight: 600;
 }
 
-
-nav h1::before{
-  content: "";
+nav h1::before {
+  content: '';
   width: 50%;
   height: 3px;
   position: absolute;
- left: 0;
- bottom: -8px;
- background:#128c7e;
+  left: 0;
+  bottom: -8px;
+  background: #128c7e;
 }
 
-nav ul li a > .whaap{
-  font-size:30px ;
+nav ul li a > .whaap {
+  font-size: 30px;
 }
 
 .header-text {
@@ -204,7 +200,7 @@ nav ul li a > .whaap{
   margin-top: 50px;
 }
 
-.service-list article{
+.service-list article {
   background-color: #ff7f7f93;
   padding: 40px;
   font-weight: 500;
@@ -213,19 +209,18 @@ nav ul li a > .whaap{
   transition: background 0.5s, transform 0.5s;
 }
 
-.service-list article i{
-  font-size: 50px ;
+.service-list article i {
+  font-size: 50px;
   margin-bottom: 30px;
 }
 
-
-.service-list article h2{
+.service-list article h2 {
   font-size: 30px;
   font-weight: 500px;
   margin-bottom: 15px;
 }
 
-.service-list article a{
+.service-list article a {
   text-decoration: none;
   color: #fff;
   font-size: 13px;
@@ -233,17 +228,17 @@ nav ul li a > .whaap{
   display: inline-block;
 }
 
-.service-list article:hover{
+.service-list article:hover {
   background-color: #128c7e;
   transform: translateY(-10px);
 }
 
 /* ----------portfolio--------------- */
-#portfolio{
-padding: 50px 0;
+#portfolio {
+  padding: 50px 0;
 }
 
-.work-list{
+.work-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
@@ -256,7 +251,7 @@ padding: 50px 0;
   overflow: hidden;
 }
 
-.work img{
+.work img {
   width: 100%;
   border-radius: 10px;
   display: block;
@@ -264,29 +259,29 @@ padding: 50px 0;
   transition: transform 0.5s;
 }
 
-.layer{
- width: 100%; 
- height: 0;
- background: linear-gradient(rgba(0, 0, 0, 0.6), #128c7e);
- border-radius: 10px;
- position: absolute;
- left: 0;
- bottom: 0;
- overflow: hidden;
- text-align: center;
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: column;
- transition: height 0.5s;
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #128c7e);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: height 0.5s;
 }
 
-.layer h3{
+.layer h3 {
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-.layer a{
+.layer a {
   margin-top: 20px;
   color: #128c7e;
   font-size: 18px;
@@ -294,16 +289,16 @@ padding: 50px 0;
   line-height: 60px;
   background: #fff;
   width: 60px;
-  height: 60px ;
-  border-radius: 50% ;
+  height: 60px;
+  border-radius: 50%;
   text-align: center;
 }
 
-.work:hover img{
+.work:hover img {
   transform: scale(1.1);
 }
 
-.work:hover .layer{
+.work:hover .layer {
   height: 100%;
 }
 
@@ -320,6 +315,59 @@ padding: 50px 0;
   transition: background 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
   background: #128c7e;
+}
+
+/* -----------------contact-------------------- */
+.contact-left {
+  flex-basis: 35%;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-left p {
+  margin-top: 30px;
+}
+
+.contact-left p i {
+  color: #128c7e;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 30px;
+  display: inline-block;
+  color: #c2524e;
+
+}
+
+.social-icons a:hover{
+ color: #128c7e;
+  cursor: pointer;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: zoom;
+  animation-duration: 1.5s;
+}
+
+@keyframes zoom{
+ 25%{
+  transform: scale(2);
+ }
+}
+
+.btn.btn2{
+ background: #128c7e;
+ font-weight: bold;
 }
