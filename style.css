@@ -324,6 +324,16 @@ nav ul li a > .whaap {
   flex-basis: 35%;
 }
 
+
+.contact-left p :hover{
+   cursor: pointer;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: zoom;
+  animation-duration: 1.5s;
+}
+
 .contact-right {
   flex-basis: 60%;
 }
@@ -371,3 +381,29 @@ nav ul li a > .whaap {
  background: #128c7e;
  font-weight: bold;
 }
+
+
+.contact-right form{
+  width: 100%;
+}
+
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #c2524e;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.btn.btn2.btn3{
+  text-align: left;
+  display: block;
+  margin: 20px 0 0 0;
+font-size: 18px;
+padding: 15px 60px;
+}
+
