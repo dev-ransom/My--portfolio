@@ -19,11 +19,10 @@
       <nav>
         <h1><span>R</span>an<span>s</span>om.</h1>
         <ul id="sidemenu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Service</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="./index.html" onclick="closemenu()">Home</a></li>
+          <li><a href="#about" onclick="closemenu()">About</a></li>
+          <li><a href="#portfolio" onclick="closemenu()">portfolio</a></li>
+          <li><a href="#contact" onclick="closemenu()">contact</a></li>
           <li><a href="https://web.whatsapp.com/send?phone=09159651020" target="_blank"><i
                 class="fa fa-whatsapp whaap"></i></a>
           </li>
@@ -211,11 +210,11 @@
   <script>
     var sidemenu = document.getElementById('sidemenu');
     function openmenu() {
-      sidemenu.style.top = "0";
+      sidemenu.style.right = "0";
 
     }
     function closemenu() {
-      sidemenu.style.top = "-100vh";
+      sidemenu.style.right = "-100%";
 
     }
   </script>
